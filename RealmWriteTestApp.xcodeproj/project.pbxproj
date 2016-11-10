@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F9426A1EDC3B4E89D09F84E /* Pods_RealmWriteTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA8C53E54E137E5C9900CBF /* Pods_RealmWriteTestApp.framework */; };
 		D6AC129C1DD259E300C1E33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AC129B1DD259E300C1E33C /* AppDelegate.swift */; };
 		D6AC129E1DD259E300C1E33C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AC129D1DD259E300C1E33C /* ViewController.swift */; };
 		D6AC12A11DD259E300C1E33C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AC129F1DD259E300C1E33C /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FA8C53E54E137E5C9900CBF /* Pods_RealmWriteTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmWriteTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59237E78BD25177FFC17E76 /* Pods-RealmWriteTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmWriteTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmWriteTestApp/Pods-RealmWriteTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D6AC12981DD259E300C1E33C /* RealmWriteTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmWriteTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AC129B1DD259E300C1E33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6AC129D1DD259E300C1E33C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D6AC12A21DD259E300C1E33C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6AC12A51DD259E300C1E33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6AC12A71DD259E300C1E33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E587FDAE73BC250FD720A90D /* Pods-RealmWriteTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmWriteTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmWriteTestApp/Pods-RealmWriteTestApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9426A1EDC3B4E89D09F84E /* Pods_RealmWriteTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82949ED8A4699AD3C05304F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FA8C53E54E137E5C9900CBF /* Pods_RealmWriteTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1AB0FFBB7BEEED6E9C21F74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C59237E78BD25177FFC17E76 /* Pods-RealmWriteTestApp.debug.xcconfig */,
+				E587FDAE73BC250FD720A90D /* Pods-RealmWriteTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D6AC128F1DD259E300C1E33C = {
 			isa = PBXGroup;
 			children = (
 				D6AC129A1DD259E300C1E33C /* RealmWriteTestApp */,
 				D6AC12991DD259E300C1E33C /* Products */,
+				A1AB0FFBB7BEEED6E9C21F74 /* Pods */,
+				82949ED8A4699AD3C05304F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6AC12AA1DD259E300C1E33C /* Build configuration list for PBXNativeTarget "RealmWriteTestApp" */;
 			buildPhases = (
+				BA0D493AED5889F734292B87 /* [CP] Check Pods Manifest.lock */,
 				D6AC12941DD259E300C1E33C /* Sources */,
 				D6AC12951DD259E300C1E33C /* Frameworks */,
 				D6AC12961DD259E300C1E33C /* Resources */,
+				119457136FAF89FB938679EF /* [CP] Embed Pods Frameworks */,
+				44C454A8B0AAC25E2AB07B47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		119457136FAF89FB938679EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmWriteTestApp/Pods-RealmWriteTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44C454A8B0AAC25E2AB07B47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmWriteTestApp/Pods-RealmWriteTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0D493AED5889F734292B87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D6AC12941DD259E300C1E33C /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		D6AC12AB1DD259E300C1E33C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C59237E78BD25177FFC17E76 /* Pods-RealmWriteTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmWriteTestApp/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		D6AC12AC1DD259E300C1E33C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E587FDAE73BC250FD720A90D /* Pods-RealmWriteTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmWriteTestApp/Info.plist;
@@ -299,6 +376,7 @@
 				D6AC12AC1DD259E300C1E33C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,24 @@
+PODS:
+  - Realm (2.0.3):
+    - Realm/Headers (= 2.0.3)
+  - Realm/Headers (2.0.3)
+  - RealmSwift (2.0.3):
+    - Realm (= 2.0.3)
+  - RealmWriteTestFramework (0.0.1):
+    - RealmSwift (~> 2.0)
+
+DEPENDENCIES:
+  - RealmWriteTestFramework (from `../RealmWriteTestFramework`)
+
+EXTERNAL SOURCES:
+  RealmWriteTestFramework:
+    :path: ../RealmWriteTestFramework
+
+SPEC CHECKSUMS:
+  Realm: 5f008bfe3c8c47142eddfc30b8c1584cde22db24
+  RealmSwift: 5afb451f65b682242f272dbb52d5c6f6e343c980
+  RealmWriteTestFramework: dfebb388bb90ba4144e4370aba3f79fc7c5581b4
+
+PODFILE CHECKSUM: 637c76c5f37a9f504858530106b467a5d1a53e67
+
+COCOAPODS: 1.1.1
